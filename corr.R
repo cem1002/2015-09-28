@@ -20,16 +20,19 @@ p_high <- ggplot(cor_data, aes(x=x,y=y_high_positive)) +
   geom_point() +
   geom_hline(yintercept=0, color="red") +
   geom_vline(xintercept=0, color="red")
-  
+ 
+p_high 
 # The power of ggplot2 here...same plot, different variables!
 p_low <- p_high + aes(x=x, y=y_low_negative)
 p_zero <- p_high + aes(x=x, y=y_zero)
 p_curved <- p_high + aes(y=y_curved)
 
 # Fancy multiple plots
-grid.arrange(p_high, p_low, ncol=2)
+grid.arrange(p_high, p_low, p_zero,ncol=3)
 grid.arrange(p_high, p_low, p_zero, p_curved, ncol=2, nrow=2)
 
 # Calculate the correlations
-cor(cor_data)
+options(digits=3)
+sim1 <- cor(cor_data)
 
+# ADD LOW CORR EXAMPLE WITH CLEAR RELATIONSHIP

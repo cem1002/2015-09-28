@@ -7,6 +7,8 @@ output: beamer_presentation
 
 ## Today
 
+* Let's say that 10am means 10:00 and not 10:10.
+
 ### Graphical/numerical summary wrap-up
 
 * (Side-by-side) boxplots
@@ -16,7 +18,7 @@ output: beamer_presentation
     + some implementations will try to suggest "outliers"
 * (Observed) (sample) correlation (coefficient)
 
-### Essentials of probability
+### Bare essentials of probability
 
 * Random variable, distribution, etc.
 * The Normal distributions
